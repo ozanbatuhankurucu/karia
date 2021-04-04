@@ -1,0 +1,6 @@
+footer {
+    height: 80px;
+    background-color: red;
+    position: static;
+    width: 100%;
+}

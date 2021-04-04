@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: normal 14px "Roboto", sans-serif !important;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.layout {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 
+NavBar: 70px, Footer: 80px
+*/
+.mainContainer {
+    min-height: calc(100vh - 150px);
+}

@@ -1,5 +1,12 @@
 import React from "react"
-
+import Layout from "../layouts/Layout"
+import { Box } from "@chakra-ui/react"
 export default function Home() {
-  return <div>Hello from Karia Endustri!</div>
+  return (
+    <Layout>
+      <div>
+        <p>saf</p>
+      </div>
+    </Layout>
+  )
 }
