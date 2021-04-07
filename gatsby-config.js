@@ -6,5 +6,23 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["@chakra-ui/gatsby-plugin"],
+  plugins: [
+    "@chakra-ui/gatsby-plugin",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/assets/images/bg`, // wherever background images are stored
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`, // wherever background images are stored
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+  ],
 }

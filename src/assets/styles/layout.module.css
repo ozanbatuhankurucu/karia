@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font: normal 14px "Roboto", sans-serif !important;
+    font: normal 16px "Roboto", sans-serif !important;
 
 }
 
@@ -24,7 +24,12 @@ h1 {
 
 /* 
 NavBar: 70px, Footer: 80px
+Padding-top in 70px' i Navbar ' ı fixlediğimiz için aşağı kayması için verildi.
+Diğer 20 px ise diğer her sayfa için default top 20 px olması için
 */
 .mainContainer {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 80px);
+    padding-top: 90px;
+    width: 100%;
+
 }

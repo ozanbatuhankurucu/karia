@@ -1,6 +1,7 @@
 footer {
     height: 80px;
-    background-color: red;
+    background-color: #fff;
     position: static;
     width: 100%;
+    border-top: 1px solid black;
 }

@@ -4,7 +4,7 @@ import "../assets/styles/navbar.css"
 
 export default function Navbar({ drawerClickHandler }) {
   return (
-    <div>
+    <div className="test">
       <Toolbar drawerClickHandler={drawerClickHandler} />
     </div>
   )

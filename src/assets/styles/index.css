@@ -1,0 +1,6 @@
+.background-slider-cont {
+    height: 70vh;
+    position: relative;
+    /* -20px layout.module.csste her sayfa için default 20 px verildi bu yüzden o 20 px boşluğu geri almış olduk.*/
+    margin-top: -20px;
+}
