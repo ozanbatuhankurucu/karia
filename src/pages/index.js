@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../layouts/Layout"
-import { Box } from "@chakra-ui/react"
 import BackgroundSlider from "gatsby-image-background-slider"
 import { useStaticQuery, graphql } from "gatsby"
 import "../assets/styles/index.css"
+
 export default function Home() {
   return (
     <Layout>
