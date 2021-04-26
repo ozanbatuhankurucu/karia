@@ -1,7 +1,14 @@
 import React from "react"
 import DrawerToggleButton from "../components/SideDrawer/DrawerToggleButton"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
+import { FaAngleDown } from "@react-icons/all-files/fa/FaAngleDown"
+import { FaAngleUp } from "@react-icons/all-files/fa/FaAngleUp"
+import { GiScrew } from "@react-icons/all-files/gi/GiScrew"
+import { GiHexagonalNut } from "@react-icons/all-files/gi/GiHexagonalNut"
+import { GiNails } from "@react-icons/all-files/gi/GiNails"
+import { FaHardHat } from "@react-icons/all-files/fa/FaHardHat"
+
 import "../assets/styles/toolbar.css"
 const query = graphql`
   query {
@@ -9,7 +16,7 @@ const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 70, height: 50) {
+        fixed(width: 90, height: 60) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -30,19 +37,58 @@ const Toolbar = props => {
         <div className="toolbar__toggle-button">
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
-        <div className="toolbar__logo">
-          <Link to="/">
-            <Img fixed={logo} />
-          </Link>
-        </div>
+
+        <Link to="/">
+          <div className="toolbar__logo">
+            <Img fixed={logo} objectFit="contain" objectPosition="50% 50%" />
+          </div>
+        </Link>
+
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Anasayfa</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <a class="dropdown">
+                <span>
+                  Ürünler <FaAngleUp className="angle-up" color="#7086A4" />{" "}
+                  <FaAngleDown className="angle-down" color="#7086A4" />
+                </span>
+                <div class="dropdown-content">
+                  <Link to="/">
+                    <div className="dropdown-link">
+                      <GiScrew className="link-icon" color="#7086A4" />
+                      <div className="link-text"> Vida</div>
+                    </div>
+                  </Link>
+                  <Link to="/about">
+                    <div className="dropdown-link">
+                      <GiHexagonalNut className="link-icon" color="#7086A4" />
+                      <div className="link-text">Somun</div>
+                    </div>
+                  </Link>
+                  <Link to="/">
+                    <div className="dropdown-link">
+                      <GiNails className="link-icon" color="#7086A4" />
+                      <div className="link-text">Perçin</div>
+                    </div>
+                  </Link>
+                  <Link to="/">
+                    <div className="dropdown-link">
+                      <div>
+                        <FaHardHat className="link-icon" color="#7086A4" />
+                      </div>
+                      <div className="link-text">İş Güvenliği Malzemeleri</div>
+                    </div>
+                  </Link>
+                </div>
+              </a>
+            </li>
+            <li>
+              <Link to="/about">Hakkımızda</Link>
+
             </li>
           </ul>
         </div>

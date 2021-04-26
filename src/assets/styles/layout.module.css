@@ -19,17 +19,20 @@ h1 {
 
 .layout {
     min-height: 100vh;
+    width: 100%;
     position: relative;
 }
 
 /* 
-NavBar: 70px, Footer: 80px
-Padding-top in 70px' i Navbar ' ı fixlediğimiz için aşağı kayması için verildi.
+NavBar: 80px, Footer: 120px
+Padding-top in 80px' i Navbar ' ı fixlediğimiz için aşağı kayması için verildi.
 Diğer 20 px ise diğer her sayfa için default top 20 px olması için
 */
 .mainContainer {
-    min-height: calc(100vh - 80px);
-    padding-top: 90px;
+    /* 100vh - footer height*/
+    min-height: calc(100vh - 120px);
+    /* 80 + 20 (diğer sayfaların default 20px i)*/
+    padding-top: 100px;
     width: 100%;
 
 }
