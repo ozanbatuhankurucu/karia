@@ -1,12 +1,18 @@
 import React from "react"
-import { Grid, GridItem, Box, Container } from "@chakra-ui/react"
 import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook"
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
+import { Container, Row, Col } from "reactstrap"
 import "../assets/styles/footer.css"
 
 export default function Footer({ children }) {
   return (
     <footer>
+      <Container>
+        <Row>
+          <Col xs="6">asfşaşfa</Col>
+          <Col xs="6">asfafsa</Col>
+        </Row>
+      </Container>
       <div className="footer-container">
         <div className="footer-info">
           <div className="footer-col">

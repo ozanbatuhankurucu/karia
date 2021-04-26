@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import SideDrawer from "../components/SideDrawer/SideDrawer"
 import Backdrop from "../components/Backdrop/Backdrop"
+import "bootstrap/dist/css/bootstrap.min.css"
 export default function Layout({ children }) {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
