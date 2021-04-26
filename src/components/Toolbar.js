@@ -88,6 +88,7 @@ const Toolbar = props => {
             </li>
             <li>
               <Link to="/about">Hakkımızda</Link>
+
             </li>
           </ul>
         </div>
