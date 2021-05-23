@@ -1,0 +1,52 @@
+.about-parent {
+    background-color: #F6F6F6;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+}
+
+.about-cont {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+
+}
+
+
+.about-pic {
+    border-radius: 10px;
+
+
+}
+
+.about-title {
+    text-align: center;
+    color: #050C1B;
+}
+
+p {
+    line-height: 2.0;
+    text-align: justify;
+    /* For Edge */
+    -moz-text-align-last: center;
+    /* For Firefox prior 58.0 */
+    text-align-last: center;
+    margin-top: 2rem;
+    color: #4F5661;
+    font-size: 1rem;
+}
+
+p span {
+    color: #7086A4;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+    .about-pic {
+        width: 50%;
+
+    }
+
+    .img-col {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -30,9 +30,20 @@ Diğer 20 px ise diğer her sayfa için default top 20 px olması için
 */
 .mainContainer {
     /* 100vh - footer height*/
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 140px);
     /* 80 + 20 (diğer sayfaların default 20px i)*/
     padding-top: 100px;
     width: 100%;
+
+}
+
+
+@media (max-width: 767px) {
+    .mainContainer {
+        /* 100vh - footer height*/
+        min-height: calc(100vh - 180px);
+
+
+    }
 
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import DrawerToggleButton from "../components/SideDrawer/DrawerToggleButton"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image"
 import { FaAngleDown } from "@react-icons/all-files/fa/FaAngleDown"
 import { FaAngleUp } from "@react-icons/all-files/fa/FaAngleUp"
 import { GiScrew } from "@react-icons/all-files/gi/GiScrew"
@@ -30,7 +30,6 @@ const Toolbar = props => {
       childImageSharp: { fixed: logo },
     },
   } = useStaticQuery(query)
-  console.log(logo)
   return (
     <header className="toolbar">
       <nav className="toolbar__navigation">
@@ -38,7 +37,7 @@ const Toolbar = props => {
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
 
-        <Link to="/">
+        <Link className="logo-link" to="/">
           <div className="toolbar__logo">
             <Img fixed={logo} objectFit="contain" objectPosition="50% 50%" />
           </div>
@@ -51,19 +50,20 @@ const Toolbar = props => {
               <Link to="/">Anasayfa</Link>
             </li>
             <li>
-              <a class="dropdown">
+              <Link to="/urunler">Urunler</Link>
+              {/* <div className="dropdown">
                 <span>
                   Ürünler <FaAngleUp className="angle-up" color="#7086A4" />{" "}
                   <FaAngleDown className="angle-down" color="#7086A4" />
                 </span>
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   <Link to="/">
                     <div className="dropdown-link">
                       <GiScrew className="link-icon" color="#7086A4" />
                       <div className="link-text"> Vida</div>
                     </div>
                   </Link>
-                  <Link to="/about">
+                  <Link to="/">
                     <div className="dropdown-link">
                       <GiHexagonalNut className="link-icon" color="#7086A4" />
                       <div className="link-text">Somun</div>
@@ -84,11 +84,10 @@ const Toolbar = props => {
                     </div>
                   </Link>
                 </div>
-              </a>
+              </div> */}
             </li>
             <li>
-              <Link to="/about">Hakkımızda</Link>
-
+              <Link to="/iletisim">Iletişim</Link>
             </li>
           </ul>
         </div>

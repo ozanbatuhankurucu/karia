@@ -24,4 +24,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
+  flags: {
+    DEV_SSR: false,
+  },
 }

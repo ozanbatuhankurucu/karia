@@ -1,0 +1,12 @@
+.active-tab {
+    background-color: #B9DADD;
+    color: #211F1E;
+}
+
+.dropdown-link {
+    display: flex;
+}
+
+.dropdown-link .link-text {
+    margin-left: 8px;
+}

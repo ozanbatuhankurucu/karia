@@ -23,7 +23,7 @@ export default function Layout({ children }) {
 
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
       <main className={styles.mainContainer}>{children}</main>
-      <Footer>Selam footer</Footer>
+      <Footer />
     </div>
   )
 }

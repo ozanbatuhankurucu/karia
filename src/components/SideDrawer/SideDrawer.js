@@ -1,5 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import { AiOutlineHome } from "@react-icons/all-files/ai/AiOutlineHome"
+import { GiScrew } from "@react-icons/all-files/gi/GiScrew"
+import { BiPhoneCall } from "@react-icons/all-files/bi/BiPhoneCall"
 import "./SideDrawer.css"
 
 const SideDrawer = props => {
@@ -12,10 +15,16 @@ const SideDrawer = props => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <AiOutlineHome className="sidedrawer-icon" color="#7086A4" />
+          <Link to="/">Anasayfa</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <GiScrew className="giscrew-phone" color="#7086A4" />
+          <Link to="/urunler">Urunler</Link>
+        </li>
+        <li>
+          <BiPhoneCall className="giscrew-phone" color="#7086A4" />
+          <Link to="/iletisim">Iletişim</Link>
         </li>
       </ul>
     </nav>

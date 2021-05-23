@@ -57,15 +57,25 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
+    color: #7086A4;
+    text-decoration: none;
+    font-weight: 700;
 }
 
+.dropdown:hover,
+.dropdown:active {
+    color: #767a80;
+}
+
+/* 
 .angle-down {
     display: inline-block;
 }
 
 .angle-up {
     display: none !important;
-}
+} */
 
 .dropdown-content {
     display: none;
@@ -128,6 +138,15 @@
 @media (max-width: 768px) {
     .toolbar_navigation-items {
         display: none;
+    }
+
+    .spacer {
+        display: none;
+
+    }
+
+    .logo-link {
+        margin-left: auto;
     }
 }
 
