@@ -5,7 +5,7 @@ import ProductTabs from "../components/ProductTabs/ProductTabs"
 export default function ProductsPage() {
   return (
     <Layout>
-      <Container className="mt-4">
+      <Container fluid className="mt-4">
         <Row>
           <Col>
             <ProductTabs />

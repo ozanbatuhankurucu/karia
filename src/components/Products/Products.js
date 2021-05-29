@@ -20,7 +20,14 @@ export default function Products({ products }) {
           <Row>
             {products.products.map((product, index) => {
               return (
-                <Col className="product-col" key={product.id} xs="3">
+                <Col
+                  className="product-col"
+                  key={product.id}
+                  lg="3"
+                  md="4"
+                  sm="4"
+                  xs="6"
+                >
                   <Product product={product} />
                 </Col>
               )
@@ -43,16 +50,21 @@ export default function Products({ products }) {
               <React.Fragment key={id}>
                 <Row>
                   <Col sm="12">
-                    <h3 className="text-center">
-                      {categoryName.toUpperCase()}
-                    </h3>
+                    <h6>{categoryName.toUpperCase()}</h6>
                   </Col>
                 </Row>
                 {products !== null && (
                   <Row>
                     {products.map((product, index) => {
                       return (
-                        <Col className="product-col" key={product.id} xs="3">
+                        <Col
+                          className="product-col"
+                          key={product.id}
+                          lg="3"
+                          md="4"
+                          sm="4"
+                          xs="6"
+                        >
                           <Product product={product} />
                         </Col>
                       )
