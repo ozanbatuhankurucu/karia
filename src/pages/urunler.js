@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../layouts/Layout"
 import { Container, Row, Col } from "reactstrap"
-import Products from "../components/Products/Products"
+import ProductTabs from "../components/ProductTabs/ProductTabs"
 export default function ProductsPage() {
   return (
     <Layout>
       <Container className="mt-4">
         <Row>
           <Col>
-            <Products />
+            <ProductTabs />
           </Col>
         </Row>
       </Container>
