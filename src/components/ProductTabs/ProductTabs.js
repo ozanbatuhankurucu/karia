@@ -80,9 +80,9 @@ export default function ProductTabs() {
     }
   }
   return (
-    <Container fluid>
+    <Container>
       <Row>
-        <Col xs="6" sm="4" md="3">
+        <Col className="tabs-col" xs="12" md="3">
           <Nav className="vertical-nav" tabs vertical pills>
             {categories.map((category, index) => {
               const { categoryName, id } = category
@@ -107,7 +107,7 @@ export default function ProductTabs() {
             })}
           </Nav>
         </Col>
-        <Col xs="6" sm="6" md="9">
+        <Col xs="12" md="9">
           <TabContent activeTab={activeTab}>
             {categories.map((category, index) => {
               return (

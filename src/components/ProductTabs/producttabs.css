@@ -1,6 +1,7 @@
 .active-tab {
     background-color: #B9DADD;
     color: #211F1E;
+    border-color: #dee2e6 #dee2e6 #fff;
 }
 
 .dropdown-link {
@@ -19,4 +20,21 @@
 
 .nav-link {
     border-radius: 0 !important;
+}
+
+/* @media screen and (max-width:1024px) {
+    .tabs-col {
+        padding-right: 0;
+    }
+} */
+
+
+@media screen and (max-width:767px) {
+    .vertical-nav {
+        /* border: none !important;
+border-bottom: 1px solid #ddd !important; */
+        flex-direction: row !important;
+        margin-bottom: 56px;
+
+    }
 }
