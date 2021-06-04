@@ -1,0 +1,38 @@
+.form-wrapper {
+  background-color: whitesmoke;
+  padding: 25px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.aciklama {
+  text-align-last: left !important;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.form-name {
+  width: 100%;
+}
+
+.input {
+  margin-bottom: 1.25rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-message {
+  height: 100px;
+}
+
+button {
+  color: #fff;
+  padding: 10px 30px;
+  background: #165043;
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
