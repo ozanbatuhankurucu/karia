@@ -9,6 +9,11 @@ require("dotenv").config({
 })
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Karia Endüstri",
+    description: "Karia Endüstriyel Ürünler",
+    siteUrl: "https://kariaendustri.com",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

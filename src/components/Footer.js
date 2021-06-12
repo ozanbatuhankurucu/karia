@@ -32,11 +32,11 @@ export default function Footer({ children }) {
                       className="social-icon mr-2"
                       color="#EFF2F6"
                     />{" "}
-                    <a href="tel:555-688-9163">+90 555 688 91 63</a>
+                    <a href="tel:555-688-9163">+90 555 684 39 70</a>
                   </li>
                   <li className="info-li mt-1">
                     <BsPerson className="social-icon mr-2" color="#EFF2F6" />
-                    Ahmet Uslu
+                    Muhammet Uslu
                   </li>
                   <li className="mt-1">
                     <div className="footer-info-large">

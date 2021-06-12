@@ -14,7 +14,27 @@ export default function Contact() {
   const onSubmit = data => console.log(data)
   return (
     <Layout className="form-container">
-      <form className="form-wrapper" onSubmit={handleSubmit(onSubmit)}>
+      {/* <div>
+        <form action="https://formspree.io/f/mpzkrper" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="_replyto" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </div> */}
+
+      <form
+        className="form-wrapper"
+        action="https://formspree.io/f/mpzkrper"
+        method="POST"
+        // onSubmit={handleSubmit(onSubmit)}
+      >
         <Container>
           <Row>
             <h1>İletişim</h1>
@@ -24,43 +44,46 @@ export default function Contact() {
             </p>
           </Row>
           <Row>
-            <label className="form-name" for="isim">
+            <label className="form-name" htmlFor="name">
               İsminiz
             </label>
             <input
               className="input"
-              id="isim"
+              id="name"
+              name="name"
               placeholder="İsim"
-              {...register("isim")}
+              {...register("name")}
             />
           </Row>
           <Row>
-            <label className="form-name" for="e-mail">
+            <label className="form-name" htmlFor="email">
               E-mail adresiniz*
             </label>
             <input
-              id="e-mail"
+              id="email"
               type="email"
+              name="_replyto"
               className="input"
               placeholder="e-mail@adres.com"
-              {...register("email", {
+              {...register("_replyto", {
                 required: true,
                 pattern: /[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}/,
               })}
             />
-            {errors.email && (
+            {errors._replyto && (
               <span className="error">
                 E-mail alanının formata uygun doldurulması gereklidir.
               </span>
             )}
           </Row>
           <Row>
-            <label className="form-name" for="message">
+            <label className="form-name" htmlFor="message">
               Mesajınız*
             </label>
             <textarea
               id="message"
               className="input input-message"
+              name="message"
               {...register("message", { required: true })}
             />
 
