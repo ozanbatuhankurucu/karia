@@ -16,7 +16,7 @@ export default function Footer({ children }) {
           <Col className="p-0 right-col" md="6" xs="12">
             <div className="list-cont">
               <figure>
-                <figcaption>Iletişim</figcaption>
+                <figcaption>İletişim</figcaption>
                 <ul className="footer-list">
                   <li className="info-li mt-1">
                     <AiOutlineMail

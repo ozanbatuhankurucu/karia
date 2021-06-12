@@ -50,7 +50,7 @@ const Toolbar = props => {
               <Link to="/">Anasayfa</Link>
             </li>
             <li>
-              <Link to="/urunler">Urunler</Link>
+              <Link to="/urunler">Ürunler</Link>
               {/* <div className="dropdown">
                 <span>
                   Ürünler <FaAngleUp className="angle-up" color="#7086A4" />{" "}
@@ -87,7 +87,7 @@ const Toolbar = props => {
               </div> */}
             </li>
             <li>
-              <Link to="/iletisim">Iletişim</Link>
+              <Link to="/iletisim">İletişim</Link>
             </li>
           </ul>
         </div>
