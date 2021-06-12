@@ -23,7 +23,6 @@ export default function About() {
       childImageSharp: { fluid: aboutLeft },
     },
   } = useStaticQuery(query)
-  console.log(aboutLeft)
   //TODO responsive kismina bakilacak
   return (
     <div className="about-parent">
