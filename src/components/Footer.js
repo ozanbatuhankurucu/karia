@@ -23,16 +23,15 @@ export default function Footer({ children }) {
                       className="social-icon mr-2"
                       color="#EFF2F6"
                     />
-                    info@kariaendustri.com
+
+                    <a href="mailto:info@kariaendustri.com">
+                      info@kariaendustri.com
+                    </a>
                   </li>
 
                   <li className="info-li mt-1">
-                    {" "}
-                    <BiPhoneCall
-                      className="social-icon mr-2"
-                      color="#EFF2F6"
-                    />{" "}
-                    <a href="tel:555-688-9163">+90 555 684 39 70</a>
+                    <BiPhoneCall className="social-icon mr-2" color="#EFF2F6" />
+                    <a href="tel:555-684-3970">+90 555 684 39 70</a>
                   </li>
                   <li className="info-li mt-1">
                     <BsPerson className="social-icon mr-2" color="#EFF2F6" />

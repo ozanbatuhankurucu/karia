@@ -16,14 +16,15 @@ const query = graphql`
   }
 `
 export default function Product({ product }) {
-  const {
-    name,
-    picture: { fluid },
-  } = product
+  const { name, picture } = product
+
+  const productPic = picture?.fluid
 
   return (
     <div className="product">
-      <Img fluid={fluid} objectFit="contain" objectPosition="50% 50%" />
+      {productPic && (
+        <Img fluid={productPic} objectFit="contain" objectPosition="50% 50%" />
+      )}
       <div className="name-cont">
         <span className="product-name">{name}</span>
       </div>
